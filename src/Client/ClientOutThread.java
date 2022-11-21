@@ -1,13 +1,11 @@
 package Client;
 
-import java.io.BufferedWriter;
 import java.io.DataOutputStream;
-import java.io.OutputStreamWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
 public class ClientOutThread extends Thread {
-    private Socket socket = null;
+    private Socket socket;
     public ClientOutThread(Socket socket) { this.socket = socket; }
     public void run() {
         try {

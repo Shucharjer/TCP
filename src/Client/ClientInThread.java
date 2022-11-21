@@ -4,7 +4,7 @@ import java.io.DataInputStream;
 import java.net.Socket;
 
 public class ClientInThread extends Thread{
-    private Socket socket = null;
+    private Socket socket;
     public ClientInThread(Socket socket) {
         this.socket = socket;
     }
